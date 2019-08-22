@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using WulAiSDK.Request;
 using WulAiSDK.Util;
 
@@ -19,7 +19,7 @@ namespace WulAiSDK
         /// <param name="pubkey">吾来平台Pubkey</param>
         /// <param name="secrect">吾来平台Secrect</param>
         /// <param name="debug">是否打开调试模式</param>
-        public WulAiClient(string pubkey,string secrect,bool debug=false)
+        public WulAiClient(string pubkey, string secrect, bool debug = false)
         {
             this.pubkey = pubkey;
             this.secrect = secrect;
@@ -31,7 +31,7 @@ namespace WulAiSDK
         /// 创建用户
         /// </summary>
         /// <param name="createUser">Create user.</param>
-        public async Task<Result> CreateUser(CreateUser createUser)
+        public async Task<CreateUser> CreateUser(CreateUser createUser)
         {
             if (createUser == null)
             {
@@ -45,7 +45,7 @@ namespace WulAiSDK
             {
                 throw new Exception("用户头像地址不能超过512个字符");
             }
-            if (createUser.user_id ==null)
+            if (createUser.user_id == null)
             {
                 throw new Exception("用户id不能为空");
             }
@@ -56,38 +56,26 @@ namespace WulAiSDK
 
             string rel = await HTTP.PostAPI(this.pubkey, this.secrect, WulAiAPI.CreateUser, JsonConvert.SerializeObject(createUser), debug);
 
-            WulAiResult wulAiResult=null;
+            WulAiResult wulAiResult = null;
             try
             {
                 wulAiResult = JsonConvert.DeserializeObject<WulAiResult>(rel);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                return new Result(1, Log.ClientError($"WulAiResult反序列化失败: {ex.ToString()}"), null);
+                throw new Exception(Log.ClientError($"WulAiResult反序列化失败: {ex.ToString()}"));
             }
 
             if (wulAiResult.code != 0)
             {
-                return new Result(1, Log.ServerError($"{wulAiResult.error}"), null);
+                throw new Exception(Log.ServerError($"{wulAiResult.error}"));
             }
             else
             {
-                return new Result(0, null, createUser);
+                return createUser;
             }
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using WulAiSDK.Response;
 
 namespace WulAiSDK.Request
 {
-    public class CreateUser:ResponseBase
+    public class CreateUser : ResponseBase
     {
         /// <summary>
         /// 用户昵称 (少于128个字符)

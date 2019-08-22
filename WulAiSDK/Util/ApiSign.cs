@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -55,7 +56,6 @@ namespace WulAiSDK.Util
             timestamp = Convert.ToString((DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000);
             sign = SHA1_Encrypt(nonce + timestamp + secret);
         }
-
 
     }
 }

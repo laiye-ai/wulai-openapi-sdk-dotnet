@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Net;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace WulAiSDK.Util
@@ -10,11 +11,11 @@ namespace WulAiSDK.Util
     {
         private readonly static string HOST = "https://openapi.wul.ai/v2";
 
-        public static async Task<string> PostAPI(string pubkey,string secret,string api, string requestJson,bool debug=false)
+        public static async Task<string> PostAPI(string pubkey, string secret, string api, string requestJson, bool debug = false)
         {
             string result = string.Empty;
 
-            string  timestamp = string.Empty, nonce = string.Empty, sign = string.Empty;
+            string timestamp = string.Empty, nonce = string.Empty, sign = string.Empty;
             ApiSign.CreateSign(pubkey, secret, ref nonce, ref sign, ref timestamp);
 
 
@@ -44,7 +45,7 @@ namespace WulAiSDK.Util
                 HttpResponseMessage rel = await httpClient.PostAsync(String.Format("{0}{1}", HOST, api), httpContent);
                 result = rel.Content.ReadAsStringAsync().Result;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 if (debug)
                 {
@@ -60,8 +61,6 @@ namespace WulAiSDK.Util
 
             return result;
         }
-
-
 
 
 

@@ -1,20 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <DebugType>full</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Util\" />
-    <Folder Include="Request\" />
-    <Folder Include="Response\" />
-    <Folder Include="Exceptions\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Class1.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
+
 </Project>

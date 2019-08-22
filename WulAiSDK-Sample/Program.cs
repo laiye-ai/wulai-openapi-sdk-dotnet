@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using WulAiSDK;
 using WulAiSDK.Request;
-using WulAiSDK.Util;
 
 namespace WulAiSDK_Sample
 {
@@ -10,18 +9,16 @@ namespace WulAiSDK_Sample
     {
         static async Task Main(string[] args)
         {
-
-            await CreateUser();
             Console.WriteLine("Hello World!");
-
+            await CreateUser();
+            Console.ReadKey();
         }
-
 
 
         private static async Task CreateUser()
         {
             WulAiClient wulAiClient = new WulAiClient("HOn8N3JudtsASYsEQObvsXzHTWtg5i9X000a3e870eb2eddeb8", "wKDQ5CYpScb56PfoWKBL", true);
-            Result rel = await wulAiClient.CreateUser(new CreateUser()
+            CreateUser rel = await wulAiClient.CreateUser(new CreateUser()
             {
                 avatar_url = "",
                 nickname = "WulAiSDK",
@@ -29,7 +26,6 @@ namespace WulAiSDK_Sample
             });
 
         }
-
 
 
 
