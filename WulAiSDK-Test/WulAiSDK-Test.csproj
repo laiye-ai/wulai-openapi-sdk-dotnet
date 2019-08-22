@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>WulAiSDK_Test</RootNamespace>
-
+    <DebugType>full</DebugType>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
