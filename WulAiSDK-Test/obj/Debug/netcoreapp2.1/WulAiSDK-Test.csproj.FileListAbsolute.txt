@@ -1,0 +1,17 @@
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/WulAiSDK-Test.deps.json
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/WulAiSDK-Test.runtimeconfig.json
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/WulAiSDK-Test.runtimeconfig.dev.json
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/WulAiSDK-Test.dll
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/WulAiSDK-Test.pdb
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/obj/Debug/netcoreapp2.1/WulAiSDK-Test.csprojAssemblyReference.cache
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/obj/Debug/netcoreapp2.1/WulAiSDK-Test.csproj.CoreCompileInputs.cache
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/obj/Debug/netcoreapp2.1/WulAiSDK-Test.AssemblyInfoInputs.cache
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/obj/Debug/netcoreapp2.1/WulAiSDK-Test.AssemblyInfo.cs
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/obj/Debug/netcoreapp2.1/WulAiSDK-Test.dll
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/obj/Debug/netcoreapp2.1/WulAiSDK-Test.pdb
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/WulAiSDK.dll
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/bin/Debug/netcoreapp2.1/WulAiSDK.pdb
+/Users/laiye/Documents/github/WulAiSDK-Sample/WulAiSDK-Test/obj/Debug/netcoreapp2.1/WulAiSDK-Test.csproj.CopyComplete
