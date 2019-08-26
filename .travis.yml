@@ -11,7 +11,7 @@ script:
   - ls
   - curl -s https://codecov.io/bash > codecov
   - chmod +x codecov
-  - ./codecov -f "WulAiSDK-Tests/coverage.opencover.xml" -t 0ac78c05-6723-4269-abc5-0aed000de523
+  - ./codecov -f "./WulAiSDK-Tests/coverage.opencover.xml" -t 0ac78c05-6723-4269-abc5-0aed000de523
 branches:
   only:
     - dev
