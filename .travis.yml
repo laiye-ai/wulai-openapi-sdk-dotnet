@@ -5,7 +5,6 @@ script:
   - dotnet restore
   - dotnet build ./WulAiSDK/
   - dotnet build ./WulAiSDK-Sample/
-  - dotnet build ./WulAiSDK-Test/
 
 branches:
   only:
