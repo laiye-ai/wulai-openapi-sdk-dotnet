@@ -1,15 +1,21 @@
 image: Visual Studio 2019
 
-before_build:
-- nuget restore
-- choco install opencover.portable
-- choco install codecov
-- choco install dotnetcore-sdk
-
-build:
-  project: WulAiSDK.sln
-  verbosity: minimal
-
+install:
+  # Install Proxy
+  - npm install o_o -g
+  - cmd: dotnet --version
+  - cmd: dotnet tool install --global altcover.visualizer
+  - cmd: cd WulAiSDK-Tests/ && dotnet add package AltCover && cd ../
+build_script:
+  - cmd: dotnet restore WulAiSDK.sln
+  - cmd: dotnet build WulAiSDK.sln
 test_script:
-- OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:".\WulAiSDK-Tests\bin\Debug\netcoreapp2.1\WulAiSDK-Tests.dll -noshadow" -filter:"+[WulAiSDK*]* -[WulAiSDK-Tests*]*" -output:".\WulAiSDK_coverage.xml"
-- codecov -f "WulAiSDK_coverage.xml"
+  # Start Proxy
+  - ps: Start-Process -FilePath o_o -NoNewWindow
+  # Dotnet Test
+  - dotnet build WulAiSDK.sln
+  - dotnet test WulAiSDK-Tests /p:AltCover=true
+on_finish:
+  - cmd: cd WulAiSDK-Tests
+  - ps: |
+      $env:PATH = 'C:\msys64\usr\bin;' + $env:PATH

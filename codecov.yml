@@ -1,0 +1,20 @@
+codecov:
+  notify:
+    after_n_builds: 2
+
+coverage:
+  status:
+    project:
+      default: off
+      unittest:
+        flags: unittest
+        target: 85%
+flags:
+  unittest:
+    # only test unittests
+    paths:
+      - WulAiSDK/
+
+ignore:
+  - "WulAiSDK-Tests/" # ignore WulAiSDK-Tests
+  - "WulAiSDK-Sample/" # ignore WulAiSDK-Sample
