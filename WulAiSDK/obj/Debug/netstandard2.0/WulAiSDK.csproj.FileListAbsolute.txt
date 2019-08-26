@@ -1,8 +1,0 @@
-C:\Users\laiye\source\github\wulai-openapi-sdk-dotnet\WulAiSDK\WulAiSDK\bin\Debug\netstandard2.0\WulAiSDK.deps.json
-C:\Users\laiye\source\github\wulai-openapi-sdk-dotnet\WulAiSDK\WulAiSDK\bin\Debug\netstandard2.0\WulAiSDK.dll
-C:\Users\laiye\source\github\wulai-openapi-sdk-dotnet\WulAiSDK\WulAiSDK\obj\Debug\netstandard2.0\WulAiSDK.csproj.CoreCompileInputs.cache
-C:\Users\laiye\source\github\wulai-openapi-sdk-dotnet\WulAiSDK\WulAiSDK\obj\Debug\netstandard2.0\WulAiSDK.AssemblyInfoInputs.cache
-C:\Users\laiye\source\github\wulai-openapi-sdk-dotnet\WulAiSDK\WulAiSDK\obj\Debug\netstandard2.0\WulAiSDK.AssemblyInfo.cs
-C:\Users\laiye\source\github\wulai-openapi-sdk-dotnet\WulAiSDK\WulAiSDK\bin\Debug\netstandard2.0\WulAiSDK.pdb
-C:\Users\laiye\source\github\wulai-openapi-sdk-dotnet\WulAiSDK\WulAiSDK\obj\Debug\netstandard2.0\WulAiSDK.dll
-C:\Users\laiye\source\github\wulai-openapi-sdk-dotnet\WulAiSDK\WulAiSDK\obj\Debug\netstandard2.0\WulAiSDK.pdb
