@@ -5,6 +5,10 @@ script:
   - dotnet restore
   - dotnet build ./WulAiSDK/
   - dotnet build ./WulAiSDK-Sample/
+  - dotnet test ./WulAiSDK-Tests/
+  - curl -s https://codecov.io/bash > codecov
+  - chmod +x codecov
+  - ./codecov -f "WulAiSDK_coverage.xml" -t 0ac78c05-6723-4269-abc5-0aed000de523
 
 branches:
   only:
