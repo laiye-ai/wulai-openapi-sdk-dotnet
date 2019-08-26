@@ -6,7 +6,7 @@ script:
   - dotnet build ./WulAiSDK/
   - dotnet build ./WulAiSDK-Sample/
   - dotnet tool install --global coverlet.console
-  - dotnet test ./WulAiSDK-Tests/ /p:CollectCoverage=true /p:CoverletOutput='./' /p:CoverletOutputFormat=opencover
+  - dotnet test /p:CollectCoverage=true /p:CoverletOutput='./' /p:CoverletOutputFormat=opencover
   - ls
   - cd ./WulAiSDK-Tests
   - ls
