@@ -9,8 +9,8 @@ namespace WulAiSDK_Tests
         [Fact]
         public void VerifyServerError()
         {
-            string orignalString = "发生了异常";
-            string targetString = "[服务端错误]发生了异常";
+            string orignalString = "whoo";
+            string targetString = "[ServerError]whoo";
             var stringResult = WulAiSDK.Util.Log.ServerError(orignalString);
             Assert.Equal(targetString, stringResult);
         }

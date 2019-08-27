@@ -8,7 +8,7 @@ namespace WulAiSDK.Util
     {
         public static string ServerError(string msg)
         {
-            string message = "[服务端错误]";
+            string message = "[ServerError]";
             if (!string.IsNullOrEmpty(msg))
             {
                 message = $"{message}{msg}";
