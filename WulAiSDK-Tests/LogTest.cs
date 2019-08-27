@@ -21,7 +21,7 @@ namespace WulAiSDK_Tests
         {
             string orignalString = "whoo";
             string targetString = "[ClientError]whoo";
-            var stringResult = WulAiSDK.Util.Log.ServerError(orignalString);
+            var stringResult = WulAiSDK.Util.Log.ClientError(orignalString);
             Assert.Equal(targetString, stringResult);
         }
 
@@ -31,7 +31,7 @@ namespace WulAiSDK_Tests
         {
             string orignalString = "whoo";
             string targetString = "[NetworkError]whoo";
-            var stringResult = WulAiSDK.Util.Log.ServerError(orignalString);
+            var stringResult = WulAiSDK.Util.Log.NetworkError(orignalString);
             Assert.Equal(targetString, stringResult);
         }
 
