@@ -29,14 +29,14 @@ namespace WulAiSDK_Tests
             Assert.Equal(rel.user_id, actual);
 
 
-
-
-            CreateUser relError = await wulAiClient.CreateUser(new CreateUser()
+            await Assert.ThrowsAsync<Exception>(()=> wulAiClient.CreateUser(new CreateUser()
             {
                 avatar_url = "",
                 nickname = "WulAiSDK",
                 user_id = ""
-            });
+            }));
+
+           
 
 
 
