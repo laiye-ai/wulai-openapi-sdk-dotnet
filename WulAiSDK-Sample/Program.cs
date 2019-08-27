@@ -1,33 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
-using WulAiSDK;
-using WulAiSDK.Request;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace WulAiSDK_Sample
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            //await CreateUser();
-            Console.ReadKey();
+            CreateWebHostBuilder(args).Build().Run();
         }
 
-
-        /*private static async Task CreateUser()
-        {
-            WulAiClient wulAiClient = new WulAiClient("HOn8N3JudtsASYsEQObvsXzHTWtg5i9X000a3e870eb2eddeb8", "wKDQ5CYpScb56PfoWKBL", true);
-            CreateUser rel = await wulAiClient.CreateUser(new CreateUser()
-            {
-                avatar_url = "",
-                nickname = "WulAiSDK",
-                user_id = "WulAiSDK"
-            });
-
-        }*/
-
-
-
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
     }
 }
