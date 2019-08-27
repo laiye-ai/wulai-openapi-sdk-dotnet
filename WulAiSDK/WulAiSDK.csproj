@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DebugType>full</DebugType>
+    <PackageId>Laiye.Nuget.WulAiSDK</PackageId>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>yangjiangtao@laiye.com</Authors>
+    <Description>吾来平台SDK</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+  </ItemGroup>
+
+</Project>

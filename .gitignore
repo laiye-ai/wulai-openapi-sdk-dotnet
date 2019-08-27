@@ -1,0 +1,8 @@
+## ignore these files
+.vs
+/WulAiSDK/bin
+/WulAiSDK/obj
+/WulAiSDK-Sample/bin
+/WulAiSDK-Sample/obj
+/WulAiSDK-Tests/bin
+/WulAiSDK-Tests/obj
