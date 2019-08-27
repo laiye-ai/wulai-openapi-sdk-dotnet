@@ -13,7 +13,7 @@ namespace WulAiSDK_Tests
         {
             string pubkey = "HOn8N3JudtsASYsEQObvsXzHTWtg5i9X000a3e870eb2eddeb8";
             string secret = "wKDQ5CYpScb56PfoWKBL";
-            WulAiClient wulAiClient = new WulAiClient(pubkey, secret);
+            WulAiClient wulAiClient = new WulAiClient(pubkey, secret,true);
             CreateUser rel = await wulAiClient.CreateUser(new CreateUser()
             {
                 avatar_url = "",
@@ -27,6 +27,18 @@ namespace WulAiSDK_Tests
             Assert.Equal(rel.nickname, actual);
 
             Assert.Equal(rel.user_id, actual);
+
+
+
+
+            CreateUser relError = await wulAiClient.CreateUser(new CreateUser()
+            {
+                avatar_url = "",
+                nickname = "WulAiSDK",
+                user_id = ""
+            });
+
+
 
         }
 

@@ -26,6 +26,11 @@ namespace WulAiSDK_Tests
             Assert.Equal(expected, actual);
 
 
+            string expectedError = await HTTP.PostAPI(pubkey, secret, WulAiAPI.CreateUser, JsonConvert.SerializeObject(new CreateUser()
+            {
+                user_id = "",
+                nickname = "test_nickname"
+            }), true);
 
 
 
