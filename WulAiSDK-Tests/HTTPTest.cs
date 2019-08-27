@@ -18,7 +18,7 @@ namespace WulAiSDK_Tests
             {
                 user_id = "test_user_id",
                 nickname = "test_nickname"
-            }));
+            }),true);
 
 
             string actual = "{}";

@@ -33,6 +33,7 @@ namespace WulAiSDK
         /// <param name="createUser">Create user.</param>
         public async Task<CreateUser> CreateUser(CreateUser createUser)
         {
+            /*
             if (createUser == null)
             {
                 throw new Exception("用户信息不能为空");
@@ -52,7 +53,7 @@ namespace WulAiSDK
             if (createUser.user_id.Length > 128)
             {
                 throw new Exception("用户id不能超过128个字符");
-            }
+            }*/
 
             string rel = await HTTP.PostAPI(this.pubkey, this.secrect, WulAiAPI.CreateUser, JsonConvert.SerializeObject(createUser), debug);
 

@@ -21,10 +21,12 @@ namespace WulAiSDK_Tests
                 user_id = "WulAiSDK"
             });
 
+            string actual = "WulAiSDK";
 
-            Assert.Equal(rel.nickname, "WulAiSDK");
 
-            Assert.Equal(rel.user_id, "WulAiSDK");
+            Assert.Equal(rel.nickname, actual);
+
+            Assert.Equal(rel.user_id, actual);
 
         }
 
