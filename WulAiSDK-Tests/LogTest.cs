@@ -14,5 +14,28 @@ namespace WulAiSDK_Tests
             var stringResult = WulAiSDK.Util.Log.ServerError(orignalString);
             Assert.Equal(targetString, stringResult);
         }
+
+
+        [Fact]
+        public void VerifyClientError()
+        {
+            string orignalString = "whoo";
+            string targetString = "[ClientError]whoo";
+            var stringResult = WulAiSDK.Util.Log.ServerError(orignalString);
+            Assert.Equal(targetString, stringResult);
+        }
+
+
+        [Fact]
+        public void VerifyNetworkError()
+        {
+            string orignalString = "whoo";
+            string targetString = "[NetworkError]whoo";
+            var stringResult = WulAiSDK.Util.Log.ServerError(orignalString);
+            Assert.Equal(targetString, stringResult);
+        }
+
+
+
     }
 }

@@ -18,7 +18,7 @@ namespace WulAiSDK.Util
 
         public static string ClientError(string msg)
         {
-            string message = "[客户端错误]";
+            string message = "[ClientError]";
             if (!string.IsNullOrEmpty(msg))
             {
                 message = $"{message}{msg}";
@@ -29,7 +29,7 @@ namespace WulAiSDK.Util
 
         public static string NetworkError(string msg)
         {
-            string message = "[网络错误]";
+            string message = "[NetworkError]";
             if (!string.IsNullOrEmpty(msg))
             {
                 message = $"{message}{msg}";
