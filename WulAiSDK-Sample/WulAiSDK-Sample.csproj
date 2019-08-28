@@ -12,4 +12,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Models\ErrorViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Shared\_CookieConsentPartial.cshtml" />
+    <Content Remove="wwwroot\css\site.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WulAiSDK\WulAiSDK.csproj" />
+  </ItemGroup>
 </Project>

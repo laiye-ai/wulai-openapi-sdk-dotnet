@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WulAiSDK", "WulAiSDK\WulAiS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WulAiSDK-Tests", "WulAiSDK-Tests\WulAiSDK-Tests.csproj", "{BD06683D-2926-458B-9744-B5BF2AEFE17C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WulAiSDK-Sample", "WulAiSDK-Sample\WulAiSDK-Sample.csproj", "{00563589-BD9A-41CF-ADC5-14F25E4BA701}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WulAiSDK-Sample", "WulAiSDK-Sample\WulAiSDK-Sample.csproj", "{5FC87524-F2B1-44D2-BDB2-314F7AFB6FCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{BD06683D-2926-458B-9744-B5BF2AEFE17C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD06683D-2926-458B-9744-B5BF2AEFE17C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD06683D-2926-458B-9744-B5BF2AEFE17C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00563589-BD9A-41CF-ADC5-14F25E4BA701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00563589-BD9A-41CF-ADC5-14F25E4BA701}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00563589-BD9A-41CF-ADC5-14F25E4BA701}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00563589-BD9A-41CF-ADC5-14F25E4BA701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC87524-F2B1-44D2-BDB2-314F7AFB6FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC87524-F2B1-44D2-BDB2-314F7AFB6FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC87524-F2B1-44D2-BDB2-314F7AFB6FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC87524-F2B1-44D2-BDB2-314F7AFB6FCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
